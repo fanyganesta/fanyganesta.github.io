@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <style>
         .bg-dark{
@@ -15,10 +16,78 @@
         .bg-primary, .btn-primary{
             background-color: rgb(61, 135, 255) !important;
         }
+
+        .nav-link[aria-expanded="true"] i{
+            transform: rotate(90deg);
+            transition: 0.3s
+        }
     </style>
 </head>
 <body>
-    <div class="container-fluid bg-dark text-white vh-100 overflow-y-auto p-md-5">
+    <div class="container-fluid bg-dark text-white vh-100 overflow-y-auto">
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="fanyganesta.github.io" class="navbar-brand text-light">Fany Ganesta</a>
+
+                    <button class="btn-outline-light btn" type="button" data-bs-target="#navigation" data-bs-toggle="offcanvas">
+                        <i class="bi-list bi"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="offcanvas offcanvas-start" id="navigation" style="width: 70vw; max-width: 360px">
+            <div class="offcanvas-header">
+                Ada yang kamu cari?
+
+                <button class="btn-close btn" data-bs-dismiss="offcanvas" data-bs-target="#navigation"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#wordpressNav" class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse">
+                            Berbasis Wordpress
+
+                            <i class="bi-chevron-right bi"></i>
+                        </a>
+                        <div class="collapse" id="wordpressNav">
+                            <ul class="list-unstyled ps-3">
+                                <li><a href="#" class="nav-link">1. Padreleather.com</a></li>
+                                <li><a href="#" class="nav-link">2. Bigissimo.id</a></li>
+                                <li><a href="#" class="nav-link">3. Digima.co.id</a></li>
+                                <li><a href="#" class="nav-link">4. Dantedentalcare.com</a></li>
+                                <li><a href="#" class="nav-link">5. Mtshasyimashari.com</a></li>
+                                <li><a href="#" class="nav-link">6. Solusijurnal.com</a></li>
+                                <li><a href="#" class="nav-link">7. Griyalestarimulia.com</a></li>
+                                <li><a href="#" class="nav-link">8. Sanggar.co.id</a></li>
+                                <li><a href="#" class="nav-link">9. Klikwisuda.com</a></li>
+                                <li><a href="#" class="nav-link">10. Tesis.id</a></li>
+                                <li><a href="#" class="nav-link">11. Haqqipublisher.com</a></li>
+                                <li><a href="#" class="nav-link">12. Alhaqqitour.com</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="#laravelNav" class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse">
+                            Berbasis Laravel
+
+                            <i class="bi-chevron-right bi"></i>
+                        </a>
+                        <div class="collapse" id="laravelNav">
+                            <ul class="list-unstyled ps-3">
+                                <li><a href="#" class="nav-link">1. Arsip & Inventaris</a></li>
+                                <li><a href="#" class="nav-link">2. Dento Care</a></li>
+                                <li><a href="#" class="nav-link">3. Ads Spend</a></li>
+                                <li><a href="#" class="nav-link">4. E - Vote</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="row g-4 p-3 p-md-5">
             <div class="col-12 d-flex justify-content-center mt-4">
                 <h4 class="m-0 bg-primary px-3 py-1 rounded">Yang Pernah Saya Kerjakan</h4>
